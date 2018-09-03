@@ -10,8 +10,8 @@ def key_for_min_value(name_hash)
   name = ""
   name_hash.each do |item, price|
 
-    if lowest_value == "" || item[price] < lowest_value
-      lowest_value = item[price]
+    if lowest_value == "" || price < lowest_value
+      lowest_value = price
       name = item
 
     end
